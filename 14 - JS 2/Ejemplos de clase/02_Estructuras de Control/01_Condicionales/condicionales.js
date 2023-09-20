@@ -1,5 +1,5 @@
 /*************** CONDICIONALES: IF ****************/
-// var nota = 4
+// var nota = 7
 // console.log("Nota:", nota)
 // // Condición (si nota es mayor o igual a 5)
 // if (nota >= 5) {
@@ -54,20 +54,20 @@
 // }
 // console.log("He obtenido un", calificacion)
 
-// /*Otro ejemplo*/
-// let menu = prompt("Ingrese una opción: \n 1: Abrir programa \n 2: Salir del programa \n 3: Otra opción \n ...etc.: ")
-// if (menu == "1") {
-//   alert("Bienvenido!")
-// }
-// else if (menu == "2") {
-//   alert("Adiós!")
-// }
-// else if (menu == "3") {
-//   alert("Opción 3")
-// }
-// else {
-//   alert("Ha ingresado una opción inválida!")
-// }
+/*Otro ejemplo*/
+let menu = prompt("Ingrese una opción: \n 1: Abrir programa \n 2: Salir del programa \n 3: Otra opción \n ...etc.: ")
+if (menu == "1") {
+  alert("Bienvenido!")
+}
+else if (menu == "2") {
+  alert("Adiós!")
+}
+else if (menu == "3") {
+  alert("Opción 3")
+}
+else {
+  alert("Ha ingresado una opción inválida!")
+}
 
 /*************** SWITCH ****************/
 // let nota = 6

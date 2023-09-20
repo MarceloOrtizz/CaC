@@ -15,7 +15,7 @@
 //     console.log(i)
 // }
 
-// //Otro ejemplo: Mostrar en el html los múltiplos de 2 hasta 100.
+//Otro ejemplo: Mostrar en el html los múltiplos de 2 hasta 100.
 // for (var i=2; i<=100; i+=2) { //i = i + 2 
 //   document.write(i," ")
 // }
