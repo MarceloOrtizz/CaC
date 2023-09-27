@@ -1,242 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listas y Tablas</title>
+    <title>Argentina</title>
+    <!-- Agregar el Favicon -->
+    <link rel="icon" href="img/favicon.ico">
 
     <style>
         table,
-        td,
-        th {
-            border: solid blue;
+        th,
+        td{
+            border: solid salmon;
         }
     </style>
 
+
 </head>
-
 <body>
+    
+    <!-- Imagen -->
+    <img src="img/slide.jfif" alt="vista_aerea_buenos_aires" width="100%">
 
-    <!-- Lista ordenada -->
-    <h2>Lista Ordenada</h2>
-    <ol type="I" reversed>
-        <li>Opción 1</li>
-        <li>Opción 2</li>
-        <li>Opción 3</li>
-        <li>Opción 4</li>
-        <li>Opción 5</li>
-        <li>Opción 6</li>
-    </ol>
+    <a href="index.html">Inicio |</a>
+    <a href="servicios.html">Servicios |</a>
+    <a href="contacto.html">Contacto</a>
 
+
+    <h1>Buenos Aires</h1>
+    <h3>La ciudad cosmopólita</h3>
     <hr>
+    <p>Buenos Aires, en el texto de la Constitución: Ciudad de Buenos Aires o Ciudad Autónoma de Buenos Aires (CABA), también llamada Capital Federal, por ser la sede del gobierno nacional, es la capital y ciudad más poblada de la República Argentina. Esta metrópolis es una ciudad autónoma que constituye uno de los 24 distritos, o «jurisdicciones de primer orden» que conforman el país. Tiene sus propios poderes ejecutivo, legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del Río de la Plata, en la región pampeana. La Ciudad de Buenos Aires fue cedida en 1880 por la Provincia de Buenos Aires para que fuera la capital federal del país; a partir de 2020 es considerada «capital principal», junto a 24 capitales alternas. En virtud de la reforma constitucional de 1994 goza de un régimen de autonomía. Su tejido urbano se asemeja a un abanico que limita al sur, oeste y norte con la lindante provincia de Buenos Aires y al este con el Río de la Plata. Oficialmente la ciudad se encuentra dividida en 15 comunas que agrupan a 48 barrios. Desde 1880 hasta el presente se la llama también Capital Federal, aunque desde 1996 no figura oficialmente con ese nombre ni en su Constitución propia ni en la Constitución Nacional. La población de la ciudad es de 3 075 646 habitantes y la del Aglomerado Gran Buenos Aires (conformado por la propia Ciudad Autónoma de Buenos Aires junto a ciertos partidos-municipios de la lindera Provincia de Buenos Aires) es de 17 541 141 habitantes, siendo este último el segundo aglomerado de Hispanoamérica, el segundo de América del Sur y una de las 20 mayores ciudades del mundo.</p>
 
-    <!-- Lista desordenada -->
-    <h2>Lista desordenada</h2>
-    <ul>
-        <li style="list-style: georgian;">🙄Opción 1</li>
-        <li style="list-style: none;">Opción 2</li>
-        <li>Opción 3</li>
-    </ul>
-
+    <br>
+    <h3>Límites</h3>
     <hr>
+    <!-- Tabla -->
+    <table>
+        <tr>
+            <th>Norte</th>
+            <th>Sur</th>
+            <th>Este</th>
+            <th>Oeste</th>
+        </tr>
 
-    <!-- Lista Ordenada dependiente -->
-    <h2>Lista Ordenada dependiente</h2>
-    <ol type="A">
-        <li>Verano</li>
-        <ol type="I">
-            <li>Enero</li>
-            <li>Febrero</li>
-            <ul>
-                <li>Primera quincena</li>
-                <li>Segunda quincena</li>
-            </ul>
-            <li>Marzo</li>
-        </ol>
-        <li>Otoño</li>
-        <ol type="1">
-            <li>Abril</li>
-            <li>Mayo</li>
-            <li>Junio</li>
-        </ol>
-        <li>Invierno</li>
-        <ol type="a">
-            <li>Julio</li>
-            <li>Agosto</li>
-            <li>Septiembre</li>
-        </ol>
-        <li>Primavera</li>
-        <ol type="i">
-            <li>Octubre</li>
-            <li>Noviembre</li>
-            <li>Diciembre</li>
-        </ol>
-    </ol>
-    <hr>
 
-    <!-- Lista desordenada dependiente -->
-    <h2>Lista Desordenada dependiente</h2>
-    <ul>
-        <li>Lunes</li>
-        <ul>
-            <li>Mañana</li>
-            <li>Tarde</li>
-            <ul>
-                <li>14hs</li>
-                <li>16hs</li>
-                <li>18hs</li>
-            </ul>
-            <li>Noche</li>
-        </ul>
-        <li>Martes</li>
-        <ul>
-            <li>Mañana</li>
-            <li>Tarde</li>
-            <li>Noche</li>
-        </ul>
-        <li>Miércoles</li>
-        <ul>
-            <li>Mañana</li>
-            <li>Tarde</li>
-            <li>Noche</li>
-        </ul>
-    </ul>
+        <tr>
+            <td>Vicente López</td>
+            <td>Lomas de Zamora</td>
+            <td>Río de la Plata</td>
+            <td>Tres de Febrero</td>
+        </tr>
+    </table>
 
-    <hr>
-
-    <!-- Lista de definición -->
-    <h2>Lista de Definición</h2>
+    <!-- Lista de Definición -->
+    <h2>Historia</h2>
     <dl>
-        <dt>HTML</dt>
-        <dd>Es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de
-            HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web
-            (CSS) o la funcionalidad/comportamiento (JavaScript).</dd>
-        <dt>CSS</dt>
-        <dd>Es un lenguaje basado en reglas: cada usuario define las reglas que especifican los grupos de estilos que
-            van a aplicarse a elementos particulares o grupos de elementos de la página web. Por ejemplo: «Quiero que el
-            encabezado principal de mi página se muestre en letras grandes de color rojo».</dd>
+        <dt>Fundación</dt>
+        <dd>En la llamada primera fundación, Pedro de Mendoza llamó al lugar Real de Nuestra Señora Santa María del Buen Ayre, para cumplir la promesa que hiciera a la Patrona de los Navegantes, que se hallaba en la Cofradía de los Mareantes de Triana y de la que él era miembro. En efecto, «Buen Ayre», la castellanización del nombre de la Virgen de Bonaria, es decir de la Virgen de la Candelaria, a quien los padres mercedarios habían levantado un santuario para los navegantes en Cagliari, Cerdeña, y que era venerada también por los navegantes de Cádiz, España. Mendoza.</dd>
+        <br>
+        <dt>Hidrografía</dt>
+        <dd>La región estaba antiguamente manchada de lagunas y atravesada por arroyos, algunos de los cuales fueron rellenados y otros entubados. Entre los arroyos de importancia están los Terceros (del Sur o de Granados, del Medio o de Matorras y del Norte o de Manso), Maldonado, Vega, Medrano, Cildáñez y White. En 1908 muchos arroyos fueron encauzados y rectificados, ya que con las crecidas causaban daños a la infraestructura de la ciudad. Fueron canalizados pero se mantenían a cielo abierto, construyéndose varios puentes para su cruce. Finalmente en 1919 se dispuso su canalización cerrada, pero los trabajos comenzaron recién en 1927, terminando algunos en 1938 y otros, como el Maldonado, en 1954.</dd>
     </dl>
-
     <hr>
+    <!-- Audio Local -->
+    <h2>Audio</h2>
+    <h3>Audio Local</h3>
+    <audio controls controlslist="nodownload">
+        <source src="media/Himno Nacional Argentino.mp4" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
 
-    <!-- TABLAS -->
-    <h2>Tablas</h2>
-    <table>
-        <!-- TR es Table Row, que son filas -->
-        <tr>
-            <!-- TH es Table Header, que son los títulos -->
-            <th>Titulo Columna 1</th>
-            <th>Titulo Columna 2</th>
-            <th>Titulo Columna 3</th>
-        </tr>
+    <!-- Audio en la Nube -->
+    <h3>Audio en la Nube</h3>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUWUfWSLE7dn?utm_source=generator&theme=0" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-        <tr>
-            <!-- TD es Table Data, que es el contenido -->
-            <td>Celda 1x1</td>
-            <td>Celda 2x1</td>
-            <td>Celda 3x1</td>
-        </tr>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/18CctEeOpjEDIAvWM5S7RE?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    
+    <br><hr>
+    <!-- Video Local -->
+    <h2>Video</h2>
+    <h3>Video Local</h3>
+    <video width="320" height="240" controls controlslist="nodownload">
+        <source src="media/Turismo Argentina 2022.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
 
-        <tr>
-            <td>Celda 1x2</td>
-            <td>Celda 2x2</td>
-            <td>Celda 3x2</td>
-        </tr>
+    <!-- Video en la nube -->
+    <h3>Video en la Nube</h3>
+    <iframe width="320"  src="https://www.youtube.com/embed/kz_OU17Os3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+    
+    <br><hr>
+    <!-- Mapa -->
+    <h3>Mapa</h3>
 
-    </table>
-    <!-- Una vez terminada, se agrega el style en el HEAD -->
- 
-    <br>
-
-    <table>
-        <tr>
-            <th>Curso</th>
-            <th>Comisión</th>
-        </tr>
-        <tr>
-            <td>Fullstack</td>
-            <td>2123</td>
-        </tr>
-        <tr>
-            <td>Java</td>
-            <td>2598</td>
-        </tr>
-        <tr>
-            <td>Web</td>
-            <td>2254</td>
-        </tr>
-    </table>
-    <br>
-
-    <h2>Colspan</h2>
-    <table>
-        <tr>
-            <th>Curso</th>
-            <th>Comisión</th>
-        </tr>
-        <tr>
-            <!-- Elimino la comisión y dentro de TD agrego el atributo Colspan, con el nro indico cuantas columnas tengo que agrupar -->
-            <td colspan="2">Fullstack</td>
-        </tr>
-        <tr>
-            <td>Java</td>
-            <td>2598</td>
-        </tr>
-        <tr>
-            <td>Web</td>
-            <td>2254</td>
-        </tr>
-    </table>
-
-    <br>
-
-
-    <h2>Rowspan</h2>
-    <table>
-        <tr>
-            <th>Curso</th>
-            <th>Comisión</th>
-        </tr>
-        <tr>
-            <td colspan="2">Fullstack</td>
-
-        </tr>
-        <tr>
-            <!-- Rowspan es para unificar 2 filas -->
-            <td rowspan="2">Java</td>
-            <td>2598</td>
-        </tr>
-        <tr>
-            <!-- Borro el título de Web -->
-            <td>2254</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <!-- ENLACES -->
-    <h2>Enlaces</h2>
-    <a href="https://www.google.com">Google</a>
-    <br>
-    <!-- El target define donde se va a abrir el link -->
-    <a href="https://www.google.com" target="_blank">Ir a Google</a>
-    <br>
-
-    <!-- Creo la carpeta IMG y me guardo una imagen de VSC -->
-    <a href="img/visual.png">Enlace a una imagen</a>
-    <br>
-    <a href="mailto:mail@gmail.com">Enviar correo</a>
-    <br>
-    <a href="mailto:mail@gmail.com?subject=Contacto desde la web">Enviar correo</a>
-    <br>
-
-    <!-- Creo la carpeta ARCHIVOS y agrego un PDF -->
-    <a href="archivos/archivo.pdf">Abrir PDF</a>
-    <br>
-    <a href="archivos/archivo.pdf" download>Descargar PDF</a>
-    <br>
+    
 </body>
-
 </html>
