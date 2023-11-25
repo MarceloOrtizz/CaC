@@ -8,6 +8,7 @@ class Catalogo:
 
     # ---------------------------------------------------------------
     # Método para agregar un producto al catálogo
+    # ---------------------------------------------------------------
     def agregar_producto(self, codigo, descripcion, cantidad, precio, imagen, proveedor):
         # Verificamos si el producto ya existe en el catálogo
         if self.consultar_producto(codigo):
@@ -31,6 +32,7 @@ class Catalogo:
     
     # ---------------------------------------------------------------
     # Método para consultar un producto por código
+    # ---------------------------------------------------------------
     def consultar_producto(self, codigo):
         # Buscamos el producto en la lista de productos
         for producto in self.productos:
@@ -40,6 +42,7 @@ class Catalogo:
     
     # ---------------------------------------------------------------
     # Método para modificar los detalles de un producto
+    # ---------------------------------------------------------------
     def modificar_producto(self, codigo, nueva_descripcion, nueva_cantidad, nuevo_precio, nueva_imagen, nuevo_proveedor):
         for producto in self.productos:
             if producto['codigo'] == codigo:
@@ -51,34 +54,11 @@ class Catalogo:
                 producto['proveedor'] = nuevo_proveedor
                 return True
         return False
-    
-    # ---------------------------------------------------------------
-    # Método para listar todos los productos en el catálogo
-    def listar_productos(self):
-        # Imprimimos un encabezado
-        print("-" * 50)
-        # Recorremos la lista de productos e imprimimos sus detalles
-        for producto in self.productos:
-            print(f"Código.....: {producto['codigo']}")
-            print(f"Descripción: {producto['descripcion']}")
-            print(f"Cantidad...: {producto['cantidad']}")
-            print(f"Precio.....: {producto['precio']}")
-            print(f"Imagen.....: {producto['imagen']}")
-            print(f"Proveedor..: {producto['proveedor']}")
-            print("-" * 50)
+
 
     # ---------------------------------------------------------------
-    # Método para eliminar un producto por código
-    def eliminar_producto(self, codigo):
-        for producto in self.productos:
-            if producto['codigo'] == codigo:
-                # Eliminamos el producto de la lista de productos
-                self.productos.remove(producto)
-                return True
-        return False
-    
-    # ---------------------------------------------------------------
     # Método para mostrar los detalles de un producto por código
+    # ---------------------------------------------------------------
     def mostrar_producto(self, codigo):
         # Consultamos el producto por su código
         producto = self.consultar_producto(codigo)
@@ -94,6 +74,36 @@ class Catalogo:
             print("-" * 50)
         else:
             print("Producto no encontrado.")
+
+
+    # ---------------------------------------------------------------
+    # Método para listar todos los productos en el catálogo
+    # ---------------------------------------------------------------
+    def listar_productos(self):
+        # Imprimimos un encabezado
+        print("-" * 50)
+        # Recorremos la lista de productos e imprimimos sus detalles
+        for producto in self.productos:
+            print(f"Código.....: {producto['codigo']}")
+            print(f"Descripción: {producto['descripcion']}")
+            print(f"Cantidad...: {producto['cantidad']}")
+            print(f"Precio.....: {producto['precio']}")
+            print(f"Imagen.....: {producto['imagen']}")
+            print(f"Proveedor..: {producto['proveedor']}")
+            print("-" * 50)
+
+    # ---------------------------------------------------------------
+    # Método para eliminar un producto por código
+    # ---------------------------------------------------------------
+    def eliminar_producto(self, codigo):
+        for producto in self.productos:
+            if producto['codigo'] == codigo:
+                # Eliminamos el producto de la lista de productos
+                self.productos.remove(producto)
+                return True
+        return False
+    
+
 
 # -------------------------------------------------------------------
 # Ejemplo de uso de la clase Catalogo
